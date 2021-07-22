@@ -10,7 +10,7 @@ defmodule GenReport.ParserTest do
       response =
         file_name
         |> Parser.parse_file()
-        |> Enum.member?(["daniele", 7, 29, "abril", 2018])
+        |> Enum.member?(["daniele", 7, "29", "abril", "2018"])
 
       assert response == true
     end
